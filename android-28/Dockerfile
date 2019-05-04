@@ -1,4 +1,4 @@
-FROM alvrme/alpine-android-base
+FROM makunomark/android-base
 LABEL maintainer="Álvaro S. <alvaro@alvr.me>"
 
 ENV BUILD_TOOLS "28.0.3"

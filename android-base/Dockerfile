@@ -6,6 +6,11 @@ ENV ANDROID_HOME "/opt/sdk"
 ENV GLIBC_VERSION "2.28-r0"
 ENV PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
 
+# Install curl.
+RUN apk add --update \
+    curl \
+    && rm -rf /var/cache/apk/*
+
 # Install required dependencies
 RUN apk add --no-cache bash git unzip wget && \
     wget -q https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub -O /etc/apk/keys/sgerrand.rsa.pub && \

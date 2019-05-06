@@ -1,5 +1,5 @@
 FROM openjdk:8-alpine3.9
-LABEL maintainer="Álvaro S. <alvaro@alvr.me>"
+LABEL maintainer="Mark Makuno <makunomark@gmail.com>"
 
 ENV SDK_TOOLS "4333796"
 ENV ANDROID_HOME "/opt/sdk"

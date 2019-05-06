@@ -1,5 +1,5 @@
 FROM makunomark/android-base
-LABEL maintainer="Álvaro S. <alvaro@alvr.me>"
+LABEL maintainer="Mark Makuno <makunomark@gmail.com>"
 
 ENV BUILD_TOOLS "28.0.3"
 ENV TARGET_SDK "28"

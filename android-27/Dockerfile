@@ -1,5 +1,5 @@
-FROM makunomark/android-base
-LABEL maintainer="Mark Makuno <makunomark@gmail.com>"
+FROM twigatech/android-alpine-base
+LABEL maintainer="Twiga Tech <eng@twigafoods.com>"
 
 ENV BUILD_TOOLS "27.0.3"
 ENV TARGET_SDK "27"

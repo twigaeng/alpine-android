@@ -13,40 +13,40 @@ All images are based on openjdk:8-alpine (JDK 8.191.12-r0)
 
 | API level        | Command                                        | Info              |
 |------------------|------------------------------------------------|-------------------|
-| Android 21 (5.0) | `docker pull makunomark/alpine-android:android-21` | [Info][android21] |
-| Android 22 (5.1) | `docker pull makunomark/alpine-android:android-22` | [Info][android22] |
-| Android 23 (6.0) | `docker pull makunomark/alpine-android:android-23` | [Info][android23] |
-| Android 24 (7.0) | `docker pull makunomark/alpine-android:android-24` | [Info][android24] |
-| Android 25 (7.1) | `docker pull makunomark/alpine-android:android-25` | [Info][android25] |
-| Android 26 (8.0) | `docker pull makunomark/alpine-android:android-26` | [Info][android26] |
-| Android 27 (8.1) | `docker pull makunomark/alpine-android:android-27` | [Info][android27] |
-| Android 28 (9.0) | `docker pull makunomark/alpine-android:android-28` | [Info][android28] |
+| Android 21 (5.0) | `docker pull twigatech/alpine-android:android-21` | [Info][android21] |
+| Android 22 (5.1) | `docker pull twigatech/alpine-android:android-22` | [Info][android22] |
+| Android 23 (6.0) | `docker pull twigatech/alpine-android:android-23` | [Info][android23] |
+| Android 24 (7.0) | `docker pull twigatech/alpine-android:android-24` | [Info][android24] |
+| Android 25 (7.1) | `docker pull twigatech/alpine-android:android-25` | [Info][android25] |
+| Android 26 (8.0) | `docker pull twigatech/alpine-android:android-26` | [Info][android26] |
+| Android 27 (8.1) | `docker pull twigatech/alpine-android:android-27` | [Info][android27] |
+| Android 28 (9.0) | `docker pull twigatech/alpine-android:android-28` | [Info][android28] |
 
 ## Use as Base Image
 
 | API level        | Base Image                              |
 |------------------|-----------------------------------------|
-| Android 21 (5.0) | `FROM makunomark/alpine-android:android-21` |
-| Android 22 (5.1) | `FROM makunomark/alpine-android:android-22` |
-| Android 23 (6.0) | `FROM makunomark/alpine-android:android-23` |
-| Android 24 (7.0) | `FROM makunomark/alpine-android:android-24` |
-| Android 25 (7.1) | `FROM makunomark/alpine-android:android-25` |
-| Android 26 (8.0) | `FROM makunomark/alpine-android:android-26` |
-| Android 27 (8.1) | `FROM makunomark/alpine-android:android-27` |
-| Android 28 (9.0) | `FROM makunomark/alpine-android:android-28` |
+| Android 21 (5.0) | `FROM twigatech/alpine-android:android-21` |
+| Android 22 (5.1) | `FROM twigatech/alpine-android:android-22` |
+| Android 23 (6.0) | `FROM twigatech/alpine-android:android-23` |
+| Android 24 (7.0) | `FROM twigatech/alpine-android:android-24` |
+| Android 25 (7.1) | `FROM twigatech/alpine-android:android-25` |
+| Android 26 (8.0) | `FROM twigatech/alpine-android:android-26` |
+| Android 27 (8.1) | `FROM twigatech/alpine-android:android-27` |
+| Android 28 (9.0) | `FROM twigatech/alpine-android:android-28` |
 
 ## Run container
 
 | API level        | Command                                                |
 |------------------|--------------------------------------------------------|
-| Android 21 (5.0) | `docker run --rm -it makunomark/alpine-android:android-21` |
-| Android 22 (5.1) | `docker run --rm -it makunomark/alpine-android:android-22` |
-| Android 23 (6.0) | `docker run --rm -it makunomark/alpine-android:android-23` |
-| Android 24 (7.0) | `docker run --rm -it makunomark/alpine-android:android-24` |
-| Android 25 (7.1) | `docker run --rm -it makunomark/alpine-android:android-25` |
-| Android 26 (8.0) | `docker run --rm -it makunomark/alpine-android:android-26` |
-| Android 27 (8.1) | `docker run --rm -it makunomark/alpine-android:android-27` |
-| Android 28 (9.0) | `docker run --rm -it makunomark/alpine-android:android-28` |
+| Android 21 (5.0) | `docker run --rm -it twigatech/alpine-android:android-21` |
+| Android 22 (5.1) | `docker run --rm -it twigatech/alpine-android:android-22` |
+| Android 23 (6.0) | `docker run --rm -it twigatech/alpine-android:android-23` |
+| Android 24 (7.0) | `docker run --rm -it twigatech/alpine-android:android-24` |
+| Android 25 (7.1) | `docker run --rm -it twigatech/alpine-android:android-25` |
+| Android 26 (8.0) | `docker run --rm -it twigatech/alpine-android:android-26` |
+| Android 27 (8.1) | `docker run --rm -it twigatech/alpine-android:android-27` |
+| Android 28 (9.0) | `docker run --rm -it twigatech/alpine-android:android-28` |
 
 ## Extending from Alpine Android Base
 
@@ -56,12 +56,12 @@ All images are based on openjdk:8-alpine (JDK 8.191.12-r0)
 
 The main difference between Alpine Android and Alpine Android Base is that the first one includes the corresponding `build-tools` and `platforms;android` versions. All Alpine Android versions share 95% of the code. Using a base image with the common part makes it easier to maintain.
 
-[docker-base]: https://hub.docker.com/r/makunomark/alpine-android-base/
-[docker]: https://hub.docker.com/r/makunomark/alpine-android/
-[docker-base-pulls]: https://img.shields.io/docker/pulls/makunomark/alpine-android-base.svg "Docker Pulls"
-[docker-pulls]: https://img.shields.io/docker/pulls/makunomark/alpine-android.svg "Docker Pulls"
-[docker-base-stars]: https://img.shields.io/docker/stars/makunomark/alpine-android-base.svg "Docker Stars"
-[docker-stars]: https://img.shields.io/docker/stars/makunomark/alpine-android.svg "Docker Stars"
+[docker-base]: https://hub.docker.com/r/twigatech/alpine-android-base/
+[docker]: https://hub.docker.com/r/twigatech/alpine-android/
+[docker-base-pulls]: https://img.shields.io/docker/pulls/twigatech/alpine-android-base.svg "Docker Pulls"
+[docker-pulls]: https://img.shields.io/docker/pulls/twigatech/alpine-android.svg "Docker Pulls"
+[docker-base-stars]: https://img.shields.io/docker/stars/twigatech/alpine-android-base.svg "Docker Stars"
+[docker-stars]: https://img.shields.io/docker/stars/twigatech/alpine-android.svg "Docker Stars"
 
 [android21]: https://github.com/alvr/alpine-android/tree/master/android-21
 [android22]: https://github.com/alvr/alpine-android/tree/master/android-22
